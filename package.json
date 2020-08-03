@@ -1,0 +1,61 @@
+{
+  "name": "charts",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@apollo/client": "^3.0.1",
+    "@material-ui/core": "^4.10.2",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "apollo-link-context": "^1.0.20",
+    "axios": "^0.19.2",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-graphql": "^0.11.0",
+    "final-form": "^4.20.0",
+    "final-form-material-ui": "^0.3.0",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.9.27",
+    "react": "^16.13.1",
+    "react-apollo": "^3.1.5",
+    "react-dom": "^16.13.1",
+    "react-final-form": "^6.5.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "recharts": "^1.8.5",
+    "redux": "^4.0.5"
+  },
+  "scripts": {
+    "start-server": "cross-env NODE_ENV=development nodemon server/server.js --watch server/*",
+    "start-client": "react-scripts start",
+    "start": "concurrently \"yarn start-server\" \"npm run start-client\" --kill-others",
+    "build-client": "react-scripts build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "cross-env": "^7.0.2",
+    "nodemon": "^2.0.4"
+  }
+}
